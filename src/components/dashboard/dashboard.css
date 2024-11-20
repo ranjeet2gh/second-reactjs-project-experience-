@@ -1,0 +1,209 @@
+.header{
+  margin:0 30px;
+  margin-top: 45px;
+}
+
+.welcome{
+    padding: 10px;
+    font-size:large;
+    font-weight: 600;
+}
+ 
+  .card-icon {
+    
+     background-color: #00796B26;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 16px;
+    display:block;
+    width: 35px;
+    align-items:center;
+    justify-content: start;
+    margin-right: 16px;
+  }
+  
+  .card-content {
+    display: flex;
+     justify-content: space-between;
+    color: #4E4E56;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .card-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 4px;
+  }
+  
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+     
+    margin-top: 6px;
+    align-items: end;
+  }
+  
+  .card-subtitle {
+    font-size: 12px;
+    color: #aaa;
+    
+  }
+  
+  .card-percentage {
+    font-size: 16px;
+    color: #4caf50;
+    font-weight: bold;
+    align-items: baseline;
+  }
+  
+  .arrow-up {
+    color: #4caf50;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .areachart{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+     
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    
+  }
+  .rcv{
+    margin-top: 10px;
+     
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+  
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    
+  }
+  .barchart{
+     margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+     
+  }
+  .piechart{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);  */
+  }
+ 
+.cards-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  
+  overflow-x: auto; 
+  scrollbar-width: none;  
+  -ms-overflow-style: none;  
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;  
+}
+
+.stats-card {
+  flex: 0 0 auto;  
+  min-width: 300px;
+  height: 109px;
+  max-width: 420px;
+  background-color: #FFFFFF;
+  color: white;
+  padding: 10px 10px;
+   
+  font-size: 18px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
+.cards-container::-webkit-scrollbar {
+  display: none;  
+}
+@media (min-width: 950px) {
+  .area-rvc{
+    display: flex;
+  }
+  .lowerchart{
+    display: flex;
+   
+  }
+  .areachart{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+    width: 60%;
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    font-family: Arial, sans-serif;
+  }
+  
+  .barchart{
+     margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    font-family: Arial, sans-serif;
+    width: 60%;
+  }
+  .piechart{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+    
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    font-family: Arial, sans-serif;
+    width: 40%;
+  }
+
+  .rcv{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+  
+    border-radius: 8px;
+    /* box-shadow:4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1); */
+    
+    font-family: Arial, sans-serif;
+    width: 40%;
+  }
+}
+@media (min-width: 950px) {
+  .cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);  
+      gap: 10px;
+      overflow: hidden;  
+  }
+
+  .stats-card {
+      flex: 1 auto auto;  
+  }
+
+}
+  

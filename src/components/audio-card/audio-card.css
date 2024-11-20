@@ -1,0 +1,63 @@
+
+  .cardAudio {
+    background: #f1f3f4;
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid #ccc;  
+    border-radius: 8px;  
+    padding:  10px 0px;  
+  }
+  
+   
+  .control-button {
+    
+    border: none;
+     border-radius: 50%;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .control-button:hover {
+    background: #d7d9da;
+  }
+  
+   
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }   
+  .innercard{
+     display: flex;
+      justify-content: center;
+      align-items:center;
+       
+  }
+   
+   
+  @media (max-width: 600px) {
+    .cardAudio {
+      padding: 0px;  
+    }
+  
+    .control-button{
+      margin-right: -14px;  
+      padding: 0px; 
+      z-index: 1; 
+    }
+  
+    audio {
+      width: 90%;  
+    }
+    .innercard{
+      margin:"0px 0px"
+    }  
+  }
+  
+  
+  

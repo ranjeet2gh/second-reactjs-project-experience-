@@ -1,0 +1,142 @@
+.parent-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;  
+  height: 50px;  
+}
+
+.navbar {
+  width: 100%;
+  display: contents;
+}
+
+.navitem {
+  background-color: #073A34 !important;
+  color: white;
+   height: 44px; 
+}
+
+.navbar-custom {
+  height: 44px;
+  padding: 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  line-height: 30px; 
+  font-size: 14px;  
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px;  
+  text-decoration: none;
+   /* padding: 5px 10px; */
+   /* margin-top: 5px; */
+  position: relative;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: white;
+  /* padding:0px; */
+  /* margin-bottom: -12px; */
+}
+
+.nav-link.active::after {
+  content: "";
+  display: block;
+  margin-top: 5px;  
+  width: 100%;
+  height: 2px;  
+  
+  background-color: white; 
+}
+.profile-popup {
+  position: absolute;
+  top: 50px;  
+  right: 20px;
+  background-color: white;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  
+  width: 200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.profile-info {
+   border-radius:8px 8px 0px 0px ;
+  
+  height: 64px;
+  background: #249285;
+  padding:15px
+}
+
+.popup-options {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.popup-button {
+  background: none;
+  border: none;
+  color: #666666;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.popup-button:hover {
+  color:  #00796B;
+}
+ 
+.collapse-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+   
+}
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links span {
+  font-size: 14px;
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  top: 44px;  
+  left: 0px;
+  background-color: #00796B;
+  color: white;
+  padding: 10px;
+  /* border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+  height: 100vh;
+}
+
+ 
+@media (max-width: 515px) {
+  .links {
+      display: none;  
+  }
+
+  .collapse-icon {
+      display: block;  
+      align-self: center;
+  margin-left: -10px;
+  margin-right: 10px;
+  }
+}
